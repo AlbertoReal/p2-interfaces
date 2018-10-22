@@ -1,0 +1,97 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+li {
+    float: left;
+    text-transform: uppercase;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+        font-size: 16px;
+}
+li a:hover {
+    background-color: #111;
+}
+#principal{
+	width: 1000px;
+	margin:auto;
+}
+#cabezera{
+	background-image: url("../img/logo.png");
+	width: 1000px;
+	margin: auto;
+	height: 140px;
+	background-repeat: no-repeat;
+	background-color: white;
+}
+#social_top{
+	float: right;
+	font-size: 24px;
+}
+#social_top a{
+	text-decoration: none;
+}
+#img_principal{
+margin-top: 20px;
+	width: 1000px;
+	background-image: url("../img/banner.jpg");
+	height: 400px;
+	background-size: auto;
+}
+#columna1{
+	width: 33%;
+	float:left;
+}
+#columna2{
+	width: 33%;
+	float:left;
+}
+#columna3{
+	width: 33%;
+	float:left;
+}
+#columna1 img{
+width: 320px;
+margin: auto;
+padding-top: 20px;
+}
+#columna2 img{
+	padding-top: 20px;
+width: 320px;
+margin: auto;
+}
+#columna3 img{
+	padding-top: 20px;
+width: 320px;
+margin: auto;
+}
+#footer1{
+	width: 33%;
+	float:left;
+	height: 300px;
+	background-color: black;
+	color:white;
+}
+#footer2{
+	width: 33%;
+	float:left;
+	height: 300px;
+	background-color: black;
+}
+#footer3{
+	width: 33%;
+	float:left;
+	height: 300px;
+	background-color: black;
+}

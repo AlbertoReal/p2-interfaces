@@ -1,28 +1,49 @@
 body{
 	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
 }
-ul {
+p {
+    font-family: "Times New Roman";
+    font-size: 120%;
+}
+h2{
+	font-size: 180%;
+	color:#828f80;
+	font-weight: bold;
+
+}
+h3{
+	font-size: 120%;
+}
+#menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #333333;
 }
-li {
+#menu li {
     float: left;
     text-transform: uppercase;
 }
-li a {
+#menu li a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-        font-size: 16px;
+    font-size: 125%;
 }
-li a:hover {
-    background-color: #111;
+#menu li a:hover {
+    background-color: #397881;
 }
+#menu li a:visited{
+	color:#baad4a;
+}
+#menu li a:active{
+  color: #828f80;
+}
+
 #principal{
 	width: 1000px;
 	margin:auto;
@@ -49,17 +70,25 @@ margin-top: 20px;
 	height: 400px;
 	background-size: auto;
 }
+#izq{
+	float: left;
+	width: 60%;
+	height: 1200px;
+}
 #columna1{
-	width: 33%;
+	width: 45%;
 	float:left;
+
 }
 #columna2{
-	width: 33%;
+	width: 45%;
 	float:left;
+	margin-left:9%;
 }
 #columna3{
-	width: 33%;
-	float:left;
+	width: 30%;
+	float:right;
+	height: 1200px;
 }
 #columna1 img{
 width: 320px;
@@ -67,12 +96,12 @@ margin: auto;
 padding-top: 20px;
 }
 #columna2 img{
-	padding-top: 20px;
+padding-top: 20px;
 width: 320px;
 margin: auto;
 }
 #columna3 img{
-	padding-top: 20px;
+padding-top: 20px;
 width: 320px;
 margin: auto;
 }
@@ -80,18 +109,176 @@ margin: auto;
 	width: 33%;
 	float:left;
 	height: 300px;
-	background-color: black;
+	background-color: #333333;
 	color:white;
+	box-sizing: border-box;
+	border:dotted;
 }
 #footer2{
 	width: 33%;
 	float:left;
 	height: 300px;
-	background-color: black;
+	background-color: #333333;
+	color:white;
+	box-sizing: border-box;
+	border:dotted;
 }
 #footer3{
 	width: 33%;
 	float:left;
 	height: 300px;
-	background-color: black;
+	background-color: #333333;
+	color:white;
+	box-sizing: border-box;
+	border:dotted;
+}
+#footer3 ul {
+    list-style-type: none;
+    margin: 0;
+    padding-top: 30px;
+    background-color: #333333;
+
+}
+
+#footer3 li a {
+    display: block;
+
+    padding: 10px 16px;
+    text-decoration: none;
+    color:white;
+    text-transform: uppercase;
+}
+
+#footer3 li a:hover {
+    background-color: #397881;
+    color: white;
+}
+#footer3 li a:visited{
+	color:#baad4a;
+}
+#footer3 li a:active{
+  color: #828f80;
+}
+@media only screen and (max-width: 1025px){
+	#principal{
+		width: 100%;
+	}
+	#cabezera{
+		width: 100%;
+	}
+	#columnas_principal{
+		width: 100%;
+		height: 2200px;
+	}
+	#izq{
+		width: 50%;
+		height: 100%;
+	}
+	#columna1{
+	width: 100%;
+	}
+	#columna2{
+	width: 100%;
+	margin: 0;
+	}
+	#columna3{
+	width: 45%;
+	float: right
+	height:2400px;
+	}
+	#columna1 img{
+	width: 85%;
+	padding-top: 20px;
+	}
+	#columna2 img{
+	width: 85%;
+	padding-top: 20px;
+	}
+	#footer{
+		width: 100%;
+		height: 100%;
+	}
+	#footer1{
+	width: 33%;
+	float:left;
+	height: 300px;
+	background-color: #333333;
+	color:white;
+	box-sizing: border-box;
+	border:dotted;
+	}
+	#footer2{
+	width: 33%;
+	float:left;
+	height: 300px;
+	background-color: #333333;
+	color:white;
+	box-sizing: border-box;
+	border:dotted;
+	}
+	#footer3{
+	width: 33%;
+	float:left;
+	height: 300px;
+	background-color: #333333;
+	color:white;
+	box-sizing: border-box;
+	border:dotted;
+	}
+}
+@media only screen and (max-width: 650px){
+#principal{
+		width: 100%;
+	}
+	#izq{
+		width: 100%;
+		height: 100%;
+	}
+	#columna1{
+	width: 100%;
+	}
+	#columna2{
+	width:100%;
+	margin:0;
+	}
+	#columna3{
+	width:100%;
+	float: right
+	}
+	#columna1 img{
+	width: 85%;
+	padding-top: 20px;
+	}
+	#columna2 img{
+	width: 85%;
+	padding-top: 20px;
+	}
+	#columna3 img{
+	width: 85%;
+	height: 100%;
+	}
+	#footer1{
+	width: 49%;
+	float:left;
+	height: 300px;
+	background-color: #333333;
+	color:white;
+	box-sizing: border-box;
+	border:dotted;
+	}
+	#footer2{
+	display: none;
+	}
+	#footer3{
+	width: 49%;
+	float:left;
+	height: 300px;
+	background-color: #333333;
+	color:white;
+	box-sizing: border-box;
+	border:dotted;
+	}
+	#img_principal{
+		display: none;
+	}
 }

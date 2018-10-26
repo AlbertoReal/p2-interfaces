@@ -43,7 +43,37 @@ h3{
 #menu li a:active{
   color: #828f80;
 }
-
+#menu_movil{
+	display: none;
+}
+#menu_movil ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: green;
+}
+#menu_movil li {
+    float: left;
+    text-transform: uppercase;
+}
+#menu_movil li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 125%;
+}
+#menu_movil li a:hover {
+    background-color: #397881;
+}
+#menu_movil li a:visited{
+	color:#baad4a;
+}
+#menu_movil li a:active{
+  color: #828f80;
+}
 #principal{
 	width: 1000px;
 	margin:auto;
@@ -80,10 +110,21 @@ margin-top: 20px;
 	float:left;
 
 }
+#columna4{
+	width: 45%;
+	float:left;
+	margin-left: 9%;
+
+}
+#columna5{
+	width: 45%;
+	float:left;
+	margin-left: 9%
+
+}
 #columna2{
 	width: 45%;
 	float:left;
-	margin-left:9%;
 }
 #columna3{
 	width: 30%;
@@ -91,6 +132,16 @@ margin-top: 20px;
 	height: 1200px;
 }
 #columna1 img{
+width: 320px;
+margin: auto;
+padding-top: 20px;
+}
+#columna4 img{
+width: 320px;
+margin: auto;
+padding-top: 20px;
+}
+#columna5 img{
 width: 320px;
 margin: auto;
 padding-top: 20px;
@@ -160,18 +211,31 @@ margin: auto;
   color: #828f80;
 }
 @media only screen and (max-width: 1025px){
+	#menu{
+		display: none;
+	}
+	#menu_movil{
+		display: inline-block;
+		width: 100%;
+		text-align: center;
+	}
+	#boton_movil{
+		font-size: 50px;
+		padding: 6px;
+		border: 6px solid;
+	}
+	#boton_movil:hover{
+		background-color: #397881;
+	}
 	#principal{
 		width: 100%;
 	}
 	#cabezera{
 		width: 100%;
 	}
-	#columnas_principal{
-		width: 100%;
-		height: 2200px;
-	}
+
 	#izq{
-		width: 50%;
+		width: 45%;
 		height: 100%;
 	}
 	#columna1{
@@ -181,16 +245,33 @@ margin: auto;
 	width: 100%;
 	margin: 0;
 	}
+	#columna4{
+	width: 100%;
+	margin: 0;
+	}
+	#columna5{
+	width: 100%;
+	margin: 0;
+	}
 	#columna3{
-	width: 45%;
-	float: right
-	height:2400px;
+	width: 40%;
+	float: left;
+	height: 2100px;
+	padding-left: 5%;
 	}
 	#columna1 img{
 	width: 85%;
 	padding-top: 20px;
 	}
 	#columna2 img{
+	width: 85%;
+	padding-top: 20px;
+	}
+	#columna4 img{
+	width: 85%;
+	padding-top: 20px;
+	}
+	#columna5 img{
 	width: 85%;
 	padding-top: 20px;
 	}
@@ -229,6 +310,7 @@ margin: auto;
 @media only screen and (max-width: 650px){
 #principal{
 		width: 100%;
+		height: 100%;
 	}
 	#izq{
 		width: 100%;
@@ -243,7 +325,9 @@ margin: auto;
 	}
 	#columna3{
 	width:100%;
-	float: right
+	height:100%;
+	margin: 0;
+	padding: 0;
 	}
 	#columna1 img{
 	width: 85%;
@@ -256,6 +340,7 @@ margin: auto;
 	#columna3 img{
 	width: 85%;
 	height: 100%;
+	padding:;
 	}
 	#footer1{
 	width: 49%;
